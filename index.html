@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="container converter-container">
+    <h1 class="text-center">Convertidor de Temperaturas</h1>
+    <div class="form-group">
+        <label for="temperatureInput">Temperatura</label>
+        <input type="number" class="form-control" id="temperatureInput" placeholder="Ingrese la temperatura">
+    </div>
+    <div class="form-group">
+        <label for="convertFrom">Convertir de</label>
+        <select class="form-control" id="convertFrom">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="convertTo">Convertir a</label>
+        <select class="form-control" id="convertTo">
+            <option value="F">Fahrenheit</option>
+            <option value="C">Celsius</option>
+        </select>
+    </div>
+    <button class="btn btn-primary btn-block" onclick="convertTemperature()">Convertir</button>
+    <div class="alert alert-info mt-3" id="result" style="display: none;"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="funciones.js"></script>
+
+</body>
+</html>
